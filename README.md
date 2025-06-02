@@ -1,1 +1,1 @@
-# oh-my-posh
+# Matt’s Oh-My-Posh theme
