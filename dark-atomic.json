@@ -208,8 +208,7 @@
             "windows": "\ue70f"
           },
           "style": "diamond",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          // "template": " \uf314 ", // código para ícone opensuse (descomentar opcional)
+           "template": " \uf314 ",
           "type": "os"
         },
         {
@@ -230,22 +229,7 @@
           "style": "powerline",
           "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
           "type": "battery"
-        }
-        // ,
-        // {
-        //   "background": "#5340ff",
-        //   "foreground": "#ffffff",
-        //   "invert_powerline": true,
-        //   "leading_diamond": "\ue0b2",
-        //   "properties": {
-        //     "time_format": "_2,15:04"
-        //   },
-        //   "style": "diamond",
-        //   "template": " \uf073 {{ .CurrentDate | date .Format }} ",
-        //   "trailing_diamond": "\ue0b4",
-        //   "type": "time"
-        // }
-        , 
+        }, 
         {
           "background": "#6a2fda",
           "foreground": "#ffffff",
