@@ -2,6 +2,8 @@
 
 set -e
 
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
 echo "📥 Baixando fonte Hack Nerd Font..."
 mkdir -p ~/.local/share/fonts
 wget -O Hack.zip "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip"
@@ -14,12 +16,12 @@ fc-cache -fv
 echo "🧹 Limpando arquivos temporários..."
 rm -rf Hack.zip HackFont
 
-echo "🖥️ Tentando configurar fonte no terminal Pixys..."
-if command -v pixys >/dev/null 2>&1; then
-    dconf write /com/github/stunkymonkey/pixys-terminal/profiles/default/font "'Hack Nerd Font Regular 12'"
-    echo "✅ Fonte configurada no Pixys Terminal."
+echo "🖥️ Tentando configurar fonte no terminal Gnome Terminal..."
+if command -v gnome-terminal >/dev/null 2>&1; then
+    dconf write /com/github/stunkymonkey/gnome-terminal/profiles/default/font "'Hack Nerd Font Regular 12'"
+    echo "✅ Fonte configurada no gnome-terminal."
 else
-    echo "⚠️ Terminal Pixys não encontrado. Pulei essa etapa."
+    echo "⚠️ Terminal gnome-terminal não encontrado. Pulei essa etapa."
 fi
 
 echo "📄 Garantindo que .bashrc existe..."
