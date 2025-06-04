@@ -209,7 +209,7 @@
           },
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          // "template": " \ue857 ", // código para ícone opensuse (opcional)
+          // "template": " \uf314 ", // código para ícone opensuse (descomentar opcional)
           "type": "os"
         },
         {
